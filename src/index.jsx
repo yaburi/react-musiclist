@@ -17,7 +17,5 @@ renderApp(Template);
 
 // Hot reloads the page and re-renders the page
 if (module && module.hot) {
-  module.hot.accept('./components/Template', () => {
-    renderApp(Template);
-  });
+  module.hot.accept();
 }
