@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
-import TestComponent from './testcomponent';
+import Template from './components/Template';
 
 const renderApp = (Component) => {
   render(
@@ -13,11 +13,11 @@ const renderApp = (Component) => {
 };
 
 // Initial render of the page
-renderApp(TestComponent);
+renderApp(Template);
 
 // Hot reloads the page and re-renders the page
 if (module && module.hot) {
-  module.hot.accept('./testcomponent', () => {
-    renderApp(TestComponent);
+  module.hot.accept('./components/Template', () => {
+    renderApp(Template);
   });
 }
